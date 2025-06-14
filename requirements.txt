@@ -21,3 +21,16 @@ fastapi
 PyPDF2
 langserve
 langchain_community
+streamlit>=1.33
+langchain>=0.2
+langchain-community>=0.2
+langchain-openai>=0.1
+langchain-groq>=0.1
+langchain-experimental>=0.0.50
+openai>=1.14
+pandas>=2.2
+tabulate>=0.9
+PyPDF2>=3.0
+duckdb>=0.10
+chromadb>=0.4
+opentelemetry-sdk>=1.24
