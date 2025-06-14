@@ -6,7 +6,7 @@ from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from langchain.chains.question_answering import load_qa_chain
 
-def get_groq_chain(vectorstore, groq_api_key, model_name="mixtral-8x7b-32768"):
+def get_groq_chain(vectorstore, groq_api_key, model_name="llama3-70b-8192"):
     llm = ChatGroq(groq_api_key=groq_api_key, model_name=model_name)
 
     prompt_template = """
