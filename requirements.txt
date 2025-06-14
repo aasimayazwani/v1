@@ -5,6 +5,7 @@ pypdf
 langchain_community
 langchain-community
 bs4
+tabulate >= 0.9
 langchain-text-splitters
 wikipedia
 pymupdf
