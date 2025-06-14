@@ -1,36 +1,40 @@
+# Essentials
 python-dotenv
-langchain
 ipykernel
-pypdf
-langchain_community
-langchain-community
 bs4
-tabulate >= 0.9
-langchain-text-splitters
-wikipedia
-pymupdf
-langchain-openai
-chromadb
-faiss-cpu
-streamlit
-langchain-experimental>=0.0.50
+openai>=1.14
+pandas>=2.2
 matplotlib>=3.8
-langchain_groq
+tabulate>=0.9
+
+# PDF & File Parsing
+pypdf
+PyPDF2>=3.0
+pymupdf
+
+# LangChain and Ecosystem
+langchain>=0.1.17
 langchain_core
-fastapi
-PyPDF2
-langserve
-langchain_community
-streamlit>=1.33
-langchain>=0.2
-langchain-community>=0.2
+langchain_community>=0.2
 langchain-openai>=0.1
 langchain-groq>=0.1
 langchain-experimental>=0.0.50
-openai>=1.14
-pandas>=2.2
-tabulate>=0.9
-PyPDF2>=3.0
-duckdb>=0.10
+langchain-text-splitters
+
+# Vector Stores
 chromadb>=0.4
+faiss-cpu
+
+# Other tools
+wikipedia
+duckdb>=0.10
+
+# Streamlit UI
+streamlit>=1.33
+
+# FastAPI / LangServe
+fastapi
+langserve
+
+# Observability (optional, comment if unused)
 opentelemetry-sdk>=1.24
