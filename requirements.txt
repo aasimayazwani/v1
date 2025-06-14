@@ -15,5 +15,6 @@ streamlit
 langchain_groq
 langchain_core
 fastapi
+PyPDF2
 langserve
 langchain_community
