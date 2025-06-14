@@ -1,62 +1,59 @@
 # app.py
 import streamlit as st
+import uuid
+
 from file_handlers import parse_pdf, parse_csv
 from vectorstore_utils import prepare_vectorstore
 from qa_chain import get_groq_chain_with_history
 from db_utils import init_db, save_chat, load_chat
-import uuid
 
 st.set_page_config(layout="wide")
 st.title("📄🔍 Groq-Powered Document Q&A Bot")
 
 openai_api_key = st.secrets.get("OPENAI_API_KEY", "")
-groq_api_key = st.secrets.get("GROQ_API_KEY", "")
+groq_api_key   = st.secrets.get("GROQ_API_KEY",   "")
 
-# Init DB and session ID
+# ─── Initialise persistent DB + session ──────────────────────────────────────
 init_db()
 session_id = st.session_state.get("session_id") or str(uuid.uuid4())
 st.session_state["session_id"] = session_id
-
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = load_chat(session_id)
 
+# ─── File upload ─────────────────────────────────────────────────────────────
 uploaded_file = st.file_uploader("Upload a CSV or PDF", type=["csv", "pdf"])
 
 if uploaded_file and openai_api_key and groq_api_key:
-    if uploaded_file.name.endswith(".pdf"):
-        text = parse_pdf(uploaded_file)
-    elif uploaded_file.name.endswith(".csv"):
-        text = parse_csv(uploaded_file)
+    # Extract raw text
+    text = (parse_pdf(uploaded_file) if uploaded_file.name.endswith(".pdf")
+            else parse_csv(uploaded_file))
 
-    with st.spinner("Embedding & Indexing..."):
-        vs = prepare_vectorstore(text, openai_api_key)
-        qa_chain = get_groq_chain_with_history(vs, groq_api_key)
+    # Build vectorstore + QA chain
+    with st.spinner("Embedding & indexing…"):
+        vs        = prepare_vectorstore(text, openai_api_key)
+        qa_chain  = get_groq_chain_with_history(vs, groq_api_key)
     st.success("Chatbot is ready!")
 
+    # ─── Chat loop ───────────────────────────────────────────────────────────
     query = st.text_input("Ask something about your document:")
     if query:
-        history_text = "\n".join([f"Q: {q}\nA: {a}" for q, a in st.session_state.chat_history]) if st.session_state.chat_history else "No prior conversation."
+        # Format memory
+        history_text = "\n".join(
+            f"Q: {q}\nA: {a}" for q, a in st.session_state.chat_history
+        ) or "No prior conversation."
 
-        docs = vs.similarity_search(query)
-        context_text = "\n".join(doc.page_content for doc in docs).strip() or "No relevant document context found."
+        # Call RetrievalQA  (only 'query' + any extra vars)
+        inputs  = {"query": query.strip(), "history": history_text}
+        answer  = qa_chain.invoke(inputs)["result"]   # invoke() is the safe entry point
 
-        chain_inputs = {
-            "question": query.strip(),
-            "history": history_text.strip(),
-            "context": context_text
-        }
-
-        # Optional: Debug view
-        st.markdown("**Debug Input to Model:**")
-        st.code(chain_inputs)
-        answer = qa_chain.run(query)
-        #answer = qa_chain.combine_documents_chain.run(chain_inputs)
+        # Persist + display
         st.session_state.chat_history.append((query, answer))
         save_chat(session_id, query, answer)
         st.markdown(f"**Answer:** {answer}")
 
+    # ─── Display running memory ──────────────────────────────────────────────
     if st.session_state.chat_history:
         st.subheader("🧠 Chat Memory (Persistent)")
-        for i, (q, a) in enumerate(st.session_state.chat_history):
-            st.markdown(f"**Q{i+1}:** {q}")
-            st.markdown(f"**A{i+1}:** {a}")
+        for i, (q, a) in enumerate(st.session_state.chat_history, 1):
+            st.markdown(f"**Q{i}:** {q}")
+            st.markdown(f"**A{i}:** {a}")
