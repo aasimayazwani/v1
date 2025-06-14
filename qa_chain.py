@@ -8,12 +8,12 @@ def get_groq_chain_with_history(vectorstore, groq_api_key, model_name="llama3-70
     llm = ChatGroq(groq_api_key=groq_api_key, model_name=model_name)
 
     prompt_template = """
-    You are a helpful assistant answering questions based on documents and prior conversation.
+    You are a helpful assistant answering questions about the uploaded document.
 
     Previous conversation:
     {history}
 
-    Document context:
+    Context:
     {context}
 
     Question: {question}
@@ -21,17 +21,18 @@ def get_groq_chain_with_history(vectorstore, groq_api_key, model_name="llama3-70
     """
 
     prompt = PromptTemplate(
-        input_variables=["context", "question", "history"],
+        input_variables=["history", "question"],
         template=prompt_template,
     )
 
     llm_chain = LLMChain(llm=llm, prompt=prompt)
-    combine_documents_chain = StuffDocumentsChain(
+
+    stuff_chain = StuffDocumentsChain(
         llm_chain=llm_chain,
         document_variable_name="context"
     )
 
     return RetrievalQA(
         retriever=vectorstore.as_retriever(),
-        combine_documents_chain=combine_documents_chain
+        combine_documents_chain=stuff_chain
     )
