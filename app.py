@@ -2,8 +2,6 @@
 import streamlit as st
 from uuid import uuid4
 from typing import List, Tuple
-from langchain.callbacks import OpenTelemetryCallbackHandler
-
 from file_handlers import parse_pdf, parse_csv
 from vectorstore_utils import prepare_vectorstore
 from df_agent_utils import build_sql_agent
