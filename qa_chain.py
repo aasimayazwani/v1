@@ -26,9 +26,12 @@ def get_groq_chain_with_history(vectorstore, groq_api_key, model_name="llama3-70
     )
 
     llm_chain = LLMChain(llm=llm, prompt=prompt)
+    combine_documents_chain = StuffDocumentsChain(
+        llm_chain=llm_chain,
+        document_variable_name="context"
+    )
 
-    # This wraps the LLMChain so it can work with documents
-    stuff_chain = StuffDocumentsChain(llm_chain=llm_chain, document_variable_name="context")
-
-    # Now use it in RetrievalQA
-    return RetrievalQA(retriever=vectorstore.as_retriever(), stuff_documents_chain=stuff_chain)
+    return RetrievalQA(
+        retriever=vectorstore.as_retriever(),
+        combine_documents_chain=combine_documents_chain
+    )
