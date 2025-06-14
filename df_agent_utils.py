@@ -1,28 +1,51 @@
-# ======================= df_agent_utils.py =======================
-from langchain_experimental.agent_toolkits import create_duckdb_agent
+"""Utility builders for analytic (DuckDB) and external-tool agents."""
 from langchain_groq import ChatGroq
+from langchain_experimental.agent_toolkits import create_duckdb_agent
+from langchain_community.utilities.wikipedia import WikipediaAPIWrapper
+from langchain.tools import WikipediaQueryRun
+from langchain.agents import initialize_agent, AgentType
 import duckdb
+import pandas as pd
+from typing import List
 
 
-def build_sql_agent(df, groq_key, model="llama3-70b-8192"):
-    """
-    Builds a SQL agent using DuckDB to query the in-memory DataFrame.
-    Relies on LangChain Experimental's `create_duckdb_agent`.
-
-    Args:
-        df (pd.DataFrame): Input DataFrame to expose as SQL table.
-        groq_key (str): Your Groq API key.
-        model (str): LLM model name, defaults to "llama3-70b-8192".
-
-    Returns:
-        LangChain Agent: A SQL-capable agent for use in RAG/Q&A flows.
-    """
+# ─── DuckDB SQL AGENT ──────────────────────────────────────────────────────
+def build_sql_agent(
+    df: pd.DataFrame,
+    groq_key: str,
+    model: str = "llama3-70b-8192",
+):
+    """Expose DataFrame as table `data` and return a read-only SQL agent."""
     llm = ChatGroq(groq_api_key=groq_key, model_name=model, temperature=0)
 
-    # DuckDB in-memory database and register the DataFrame
     con = duckdb.connect()
-    con.register("data", df)  # expose the DataFrame as a SQL table called "data"
+    con.register("data", df)  # table name = data
 
-    # Create the DuckDB agent
-    agent = create_duckdb_agent(llm=llm, db=con, include_dataframe_in_prompt=True)
+    agent = create_duckdb_agent(
+        llm=llm,
+        db=con,
+        include_dataframe_in_prompt=True,
+        prefix_messages=[
+            "You are a data analyst. Only run read-only SELECT statements."
+        ],
+    )
+    return agent
+
+
+# ─── Wikipedia TOOL AGENT ──────────────────────────────────────────────────
+def build_wikipedia_agent(
+    groq_key: str,
+    model: str = "llama3-70b-8192",
+):
+    """Zero-shot REACT agent that can call the Wikipedia tool."""
+    llm = ChatGroq(groq_api_key=groq_key, model_name=model, temperature=0)
+    wiki_tool = WikipediaQueryRun(api_wrapper=WikipediaAPIWrapper())
+    tools: List = [wiki_tool]
+
+    agent = initialize_agent(
+        tools,
+        llm,
+        agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+        verbose=False,
+    )
     return agent
