@@ -11,11 +11,12 @@ PyPDF2>=3.0
 pymupdf
 
 # LangChain & ecosystem
-langchain>=0.1.17
-langchain_core
-langchain_community>=0.2
-langchain-openai>=0.1
-langchain-groq>=0.1
+# --- LangChain ecosystem (pin to the same minor) --------------------
+langchain==0.2.*
+langchain-core==0.2.*          # new, required by 0.2 line
+langchain-community==0.2.*
+langchain-openai==0.1.*        # 0.1 line already matches 0.2 core
+langchain-groq==0.1.*
 langchain-experimental>=0.0.50
 langchain-text-splitters
 
