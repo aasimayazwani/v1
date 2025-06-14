@@ -1,26 +1,29 @@
+# qa_chain.py
 from langchain_groq import ChatGroq
-from langchain.chains import RetrievalQA
-
-from langchain_groq import ChatGroq
-from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
-from langchain.chains.question_answering import load_qa_chain
+from langchain.chains import LLMChain
+from langchain.chains.retrieval_qa.base import RetrievalQA
 
-def get_groq_chain(vectorstore, groq_api_key, model_name="llama3-70b-8192"):
+def get_groq_chain_with_history(vectorstore, groq_api_key, model_name="llama3-70b-8192"):
     llm = ChatGroq(groq_api_key=groq_api_key, model_name=model_name)
 
     prompt_template = """
-    Use the following context to answer the question.
-    If you don’t know the answer, just say “I don’t know.” Don’t try to make up an answer.
+    You are a helpful assistant answering questions based on documents and prior conversation.
 
-    Context:
+    Previous conversation:
+    {history}
+
+    Document context:
     {context}
 
     Question: {question}
+    Answer:
     """
+
     prompt = PromptTemplate(
-        template=prompt_template, input_variables=["context", "question"]
+        input_variables=["context", "question", "history"],
+        template=prompt_template,
     )
 
-    qa_chain = load_qa_chain(llm, chain_type="stuff", prompt=prompt)
-    return RetrievalQA(combine_documents_chain=qa_chain, retriever=vectorstore.as_retriever())
+    chain = LLMChain(llm=llm, prompt=prompt)
+    return RetrievalQA(combine_documents_chain=chain, retriever=vectorstore.as_retriever())
