@@ -49,8 +49,8 @@ if uploaded_file and openai_api_key and groq_api_key:
         # Optional: Debug view
         st.markdown("**Debug Input to Model:**")
         st.code(chain_inputs)
-
-        answer = qa_chain.combine_documents_chain.run(chain_inputs)
+        answer = qa_chain.run(query)
+        #answer = qa_chain.combine_documents_chain.run(chain_inputs)
         st.session_state.chat_history.append((query, answer))
         save_chat(session_id, query, answer)
         st.markdown(f"**Answer:** {answer}")
