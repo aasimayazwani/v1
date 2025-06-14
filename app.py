@@ -35,14 +35,20 @@ if uploaded_file and openai_api_key and groq_api_key:
 
     query = st.text_input("Ask something about your document:")
     if query:
-        history_text = "\n".join([f"Q: {q}\nA: {a}" for q, a in st.session_state.chat_history]) if st.session_state.chat_history else ""
+        history_text = "\n".join([f"Q: {q}\nA: {a}" for q, a in st.session_state.chat_history]) if st.session_state.chat_history else "No prior conversation."
 
         docs = vs.similarity_search(query)
+        context_text = "\n".join(doc.page_content for doc in docs).strip() or "No relevant document context found."
+
         chain_inputs = {
-            "question": query,
-            "history": history_text,
-            "context": "\n".join(doc.page_content for doc in docs)
+            "question": query.strip(),
+            "history": history_text.strip(),
+            "context": context_text
         }
+
+        # Optional: Debug view
+        st.markdown("**Debug Input to Model:**")
+        st.code(chain_inputs)
 
         answer = qa_chain.combine_documents_chain.run(chain_inputs)
         st.session_state.chat_history.append((query, answer))
