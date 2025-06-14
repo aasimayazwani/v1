@@ -12,6 +12,8 @@ langchain-openai
 chromadb
 faiss-cpu
 streamlit
+langchain-experimental>=0.0.50
+matplotlib>=3.8
 langchain_groq
 langchain_core
 fastapi
