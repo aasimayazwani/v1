@@ -35,7 +35,8 @@ if uploaded_file and openai_api_key and groq_api_key:
 
     query = st.text_input("Ask something about your document:")
     if query:
-        history_text = "\n".join([f"Q: {q}\nA: {a}" for q, a in st.session_state.chat_history])
+        history_text = "\n".join([f"Q: {q}\nA: {a}" for q, a in st.session_state.chat_history]) if st.session_state.chat_history else ""
+
         docs = vs.similarity_search(query)
         chain_inputs = {
             "question": query,
