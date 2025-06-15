@@ -19,6 +19,7 @@ langchain-openai==0.1.*        # 0.1 line already matches 0.2 core
 langchain-groq==0.1.*
 langchain-experimental>=0.0.50
 langchain-text-splitters
+langchain-experimental>=0.0.50
 
 # Vector stores
 chromadb>=0.4
