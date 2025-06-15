@@ -1,31 +1,37 @@
 # ======================= vectorstore_utils.py =======================
+from __future__ import annotations
+import hashlib, json, pathlib
+from typing import List
+
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain.docstore.document import Document
-import hashlib, json, os, pathlib
 
-CACHE_PATH = pathlib.Path("/mnt/data/row_cache.jsonl")
-CHROMA_PATH = "/mnt/data/chroma"
+# Writable local paths
+DATA_DIR   = pathlib.Path("./.data")
+CACHE_PATH = DATA_DIR / "row_cache.jsonl"
+CHROMA_DIR = DATA_DIR / "chroma"
 
-# ── Ensure paths exist -------------------------------------------------
-CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)      # ← add this
-if not CACHE_PATH.exists():                              # ← add this
-    CACHE_PATH.touch()
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+CACHE_PATH.touch(exist_ok=True)
 
-def _cached_embed(text: str, embedder) -> list[float]:
+def _cached_embed(text: str, embedder: OpenAIEmbeddings) -> List[float]:
     h = hashlib.sha256(text.encode()).hexdigest()
-    with CACHE_PATH.open() as f:                          # streamlined check
+    with CACHE_PATH.open() as f:
         for line in f:
             rec = json.loads(line)
             if rec["h"] == h:
                 return rec["v"]
-
-    v = embedder.embed_query(text)
+    vec = embedder.embed_query(text)
     with CACHE_PATH.open("a") as f:
-        f.write(json.dumps({"h": h, "v": v}) + "\n")
-    return v
+        f.write(json.dumps({"h": h, "v": vec}) + "\n")
+    return vec
 
-def prepare_vectorstore(docs: list[Document], openai_key: str):
+def prepare_vectorstore(docs: List[Document], openai_key: str) -> Chroma:
     embedder = OpenAIEmbeddings(openai_api_key=openai_key)
-    vectors = [_cached_embed(d.page_content, embedder) for d in docs]
-    return Chroma.from_documents(docs, vectors, persist_directory=CHROMA_PATH)
+    vectors  = [_cached_embed(d.page_content, embedder) for d in docs]
+    return Chroma.from_documents(
+        documents=docs,
+        embeddings=vectors,
+        persist_directory=str(CHROMA_DIR),
+    )
