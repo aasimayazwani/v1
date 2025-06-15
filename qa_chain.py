@@ -3,7 +3,6 @@ from langchain_groq import ChatGroq
 
 from langchain.prompts import PromptTemplate
 from langchain.vectorstores.base import VectorStore
-from langchain.output_parsers import StrOutputParser
 from langchain.schema.document import Document
 
 from langchain.retrievers import create_history_aware_retriever
@@ -20,7 +19,7 @@ def build_rag_chain(
     retriever = vectorstore.as_retriever(search_kwargs={"k": top_k})
     llm = ChatGroq(groq_api_key=groq_api_key, model_name=model)
 
-    # --- History-aware retriever ---
+    # History-aware query rewriting
     contextual_retriever = create_history_aware_retriever(
         llm=llm,
         retriever=retriever,
@@ -36,7 +35,7 @@ Standalone question:"""
         ),
     )
 
-    # --- Answer generation ---
+    # Document-based answer generation
     answer_chain = create_stuff_documents_chain(
         llm=llm,
         prompt=PromptTemplate.from_template(
