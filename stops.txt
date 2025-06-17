@@ -1,0 +1,441 @@
+stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,wheelchair_boarding
+1,10,"Compton Bl & Matthisen Ave",,33.895989,-118.233730,,,,,,2
+2,100,"Western Ave & Redondo Beach Bl",,33.888122,-118.309335,,,,,,2
+3,101,"Western Ave & 154th St",,33.891039,-118.309317,,,,,,2
+4,102,"Western Ave & 153rd St",,33.892952,-118.309320,,,,,,2
+5,104,"Marine Ave & Gramercy Pl",,33.894576,-118.313643,,,,,,2
+6,105,"Marine Ave & Van Ness Ave",,33.894568,-118.318068,,,,,,2
+7,106,"Marine Ave & Casmir Ave",,33.894578,-118.321948,,,,,,2
+8,107,"Marine Ave & Crenshaw Bl",,33.894565,-118.326884,,,,,,2
+9,108,"Marine Ave & Lemoli Ave",,33.894575,-118.330538,,,,,,2
+10,109,"Marine Ave & Cranbrook Ave",,33.894576,-118.336312,,,,,,2
+11,11,"Compton Bl & Aranbe Ave",,33.896003,-118.231727,,,,,,2
+12,110,"Marine Ave & Doty Ave",,33.894574,-118.338902,,,,,,2
+13,111,"Marine Ave & Prarie Ave",,33.894566,-118.343321,,,,,,2
+14,112,"Marine Ave & Freeman Ave",,33.894550,-118.348446,,,,,,2
+15,113,"Marine Ave & Hawthorne Bl",,33.894552,-118.352030,,,,,,2
+16,114,"Marine Ave & Firmona Av",,33.894547,-118.357402,,,,,,2
+17,118,"Wilmington Ave & 118th St",,33.925827,-118.238915,,,,,,2
+18,119,"120th St & Compton Ave",,33.923788,-118.245624,,,,,,2
+19,12,"Compton Bl & Orleander Ave",,33.896037,-118.228423,,,,,,2
+20,121,"Compton Ave & El Segundo Bl",,33.916544,-118.246115,,,,,,2
+21,122,"El Segundo Bl & Slater Ave",,33.916167,-118.249084,,,,,,2
+22,123,"El Segundo Bl & Central Ave",,33.916254,-118.254721,,,,,,2
+23,124,"El Segundo Bl & Keene Ave",,33.916257,-118.257163,,,,,,2
+24,125,"El Segundo Bl & McKinley Ave",,33.916247,-118.261148,,,,,,2
+25,126,"El Segundo Bl & Avalon Bl",,33.916295,-118.264749,,,,,,2
+26,127,"El Segundo Bl & San Pedro St",,33.916293,-118.269876,,,,,,2
+27,128,"El Segundo Bl & Main St",,33.916309,-118.274371,,,,,,2
+28,129,"El Segundo Bl & Broadway",,33.916304,-118.277841,,,,,,2
+29,13,"Compton Bl & Acacia Ave",,33.896078,-118.226945,,,,,,2
+30,130,"El Segundo Bl & Figueroa St",,33.916298,-118.282221,,,,,,2
+31,131,"El Segundo Bl & Hoover St",,33.916310,-118.287212,,,,,,2
+32,132,"El Segundo Bl & Vermont Ave",,33.916307,-118.292229,,,,,,2
+33,133,"El Segundo Bl & Budlong Ave",,33.916320,-118.296571,,,,,,2
+34,134,"El Segundo Bl & Normandie Ave",,33.916321,-118.300799,,,,,,2
+35,135,"El Segundo Bl & Halldale Ave",,33.916318,-118.302622,,,,,,2
+36,136,"El Segundo Bl & Harvard Bl",,33.916328,-118.306662,,,,,,2
+37,138,"El Segundo Bl & Wilton Pl",,33.916327,-118.313382,,,,,,2
+38,139,"El Segundo Bl & Van Ness Ave",,33.916340,-118.317438,,,,,,2
+39,14,"Myrrh St & Acacia Ave",,33.892301,-118.226005,,,,,,2
+40,140,"El Segundo Bl & Purche Ave",,33.916333,-118.320111,,,,,,2
+41,141,"El Segundo Bl & Wilkie Ave",,33.916345,-118.322719,,,,,,2
+42,142,"El Segundo Bl & Crenshaw Bl",,33.916338,-118.326142,,,,,,2
+43,143,"El Segundo Bl & Chadron Ave",,33.916336,-118.329266,,,,,,2
+44,144,"El Segundo Bl & Cerise Ave",,33.916338,-118.332108,,,,,,2
+45,145,"El Segundo Bl & Yukon Ave",,33.916328,-118.335433,,,,,,2
+46,146,"El Segundo Bl & Doty Ave",,33.916322,-118.339297,,,,,,2
+47,147,"El Segundo Bl & Prarie Ave",,33.916310,-118.343481,,,,,,2
+48,148,"El Segundo Bl & Jefferson Ave",,33.916307,-118.347112,,,,,,2
+49,149,"El Segundo Bl & Washington Ave",,33.916300,-118.349728,,,,,,2
+50,151,"El Segundo Bl & Ramona Ave",,33.916296,-118.356985,,,,,,2
+51,152,"El Segundo Bl & Inglewood Ave",,33.916293,-118.360854,,,,,,2
+52,153,"El Segundo Bl & Oceangate Ave",,33.916278,-118.367270,,,,,,2
+53,154,"El Segundo Bl & Isis Ave EB",,33.916207,-118.374611,,,,,,2
+54,155,"El Segundo Bl & Aviation Bl EB",,33.916206,-118.378109,,,,,,2
+55,158,"182nd St & Normandie Ave",,33.865957,-118.298733,,,,,,2
+56,159,"Normandie Ave & 178th St",,33.868939,-118.299229,,,,,,2
+57,160,"Normandie Ave & Artesia Bl",,33.873895,-118.299036,,,,,,2
+58,161,"Normandie Ave & 170th St",,33.876162,-118.299435,,,,,,2
+59,162,"Normandie Ave & 166th St",,33.879791,-118.299950,,,,,,2
+60,163,"Normandie Ave & 163rd St",,33.883065,-118.299783,,,,,,2
+61,164,"Normandie Ave & 160th St",,33.885285,-118.299647,,,,,,2
+62,165,"Normandie Ave & 158th St",,33.887566,-118.299542,,,,,,2
+63,167,"Normandie Ave & Marine Ave",,33.894959,-118.300549,,,,,,2
+64,168,"Normandie Ave & 148th St",,33.897181,-118.300549,,,,,,2
+65,169,"Normandie Ave & 146th St",,33.898795,-118.300538,,,,,,2
+66,170,"Normandie Ave & Rosecrans Ave",,33.901309,-118.300537,,,,,,2
+67,171,"Normandie Ave & 139th St",,33.905274,-118.300529,,,,,,2
+68,172,"135th St & Normandie Ave",,33.909078,-118.300654,,,,,,2
+69,173,"135th St & Halldale Ave",,33.909081,-118.302639,,,,,,2
+70,174,"135th St & Western Ave",,33.909091,-118.309435,,,,,,2
+71,176,"135th St & Van Ness Ave",,33.909092,-118.317417,,,,,,2
+72,177,"Van Ness Ave & 139th St",,33.905369,-118.317740,,,,,,2
+73,178,"Van Ness Ave & Rosecrans Ave",,33.901655,-118.317752,,,,,,2
+74,179,"Van Ness Ave & 146th Pl",,33.898140,-118.317746,,,,,,2
+75,18,"Marine Ave & Firmona Av",,33.894737,-118.357981,,,,,,2
+76,181,"Van Ness Ave & 154th Pl",,33.891300,-118.317750,,,,,,2
+77,182,"Van Ness Ave & 157th St",,33.887763,-118.317743,,,,,,2
+78,183,"Manhattan Beach Bl & Arcturus Ave",,33.887289,-118.321268,,,,,,2
+79,184,"Manhattan Beach Bl & Marigold Ave",,33.887292,-118.323106,,,,,,2
+81,188,"Compton Bl & Orleander Ave",,33.895852,-118.228352,,,,,,2
+82,189,"Compton Bl & Aranbe Ave",,33.895826,-118.231964,,,,,,2
+83,19,"Marine Ave & Hawthorne Bl",,33.894744,-118.352153,,,,,,2
+84,190,"Compton Bl & Matthisen Ave",,33.895816,-118.233924,,,,,,2
+85,191,"Wilmington Ave & Compton Bl",,33.895604,-118.237425,,,,,,2
+86,192,"Wilmington Ave & Laurel St",,33.892664,-118.237235,,,,,,2
+87,193,"Wilmington Ave & Alondra Bl",,33.888953,-118.236965,,,,,,2
+88,194,"Alondra Bl & Dwight Ave",,33.888395,-118.241280,,,,,,2
+89,195,"Alondra Bl & Northwood Ave",,33.888367,-118.243829,,,,,,2
+90,197,"Alondra Bl & Central Ave",,33.888178,-118.250348,,,,,,2
+91,198,"Alondra Bl & Aprilla Ave",,33.886517,-118.254276,,,,,,2
+92,199,"Alondra Bl & Clymar Ave",,33.886163,-118.257268,,,,,,2
+94,20,"Marine Ave & Freeman Ave",,33.894747,-118.348750,,,,,,2
+95,200,"Alondra Bl & Haskins Ln",,33.886030,-118.261649,,,,,,2
+96,201,"Alondra Bl & Avalon Bl",,33.885901,-118.265656,,,,,,2
+97,202,"Alondra Bl & Maple Ave",,33.885716,-118.271045,,,,,,2
+98,203,"Main St & Alondra Bl",,33.885457,-118.275795,,,,,,2
+99,204,"Gardena Bl & Broadway",,33.881848,-118.277946,,,,,,2
+100,205,"Gardena Bl & Figueroa St",,33.881749,-118.282967,,,,,,2
+101,206,"Gardena Bl & Hoover St",,33.881639,-118.286630,,,,,,2
+102,207,"Redondo Beach Bl & Budlong Ave",,33.892237,-118.295777,,,,,,2
+103,208,"Redondo Beach Bl & Raymond Ave",,33.891901,-118.298312,,,,,,2
+104,209,"Redondo Beach Bl & Normandie Ave",,33.891448,-118.299713,,,,,,2
+105,21,"Marine Ave & Prarie Ave",,33.894750,-118.343613,,,,,,2
+106,210,"Redondo Beach Bl & Nuanu Dr",,33.890368,-118.303055,,,,,,2
+107,211,"Redondo Beach Bl & Denker Ave",,33.889703,-118.305117,,,,,,2
+108,213,"Redondo Beach Bl & Gramercy Pl",,33.887209,-118.312809,,,,,,2
+109,214,"Redondo Beach Bl & Van Ness Ave",,33.885999,-118.316590,,,,,,2
+110,215,"Redondo Beach Bl & Wilkie Ave",,33.883850,-118.323238,,,,,,2
+111,217,"Redondo Beach Bl & Yukon Ave",,33.880099,-118.334840,,,,,,2
+112,218,"Redondo Beach Bl & Ainsworth Ave",,33.878519,-118.339731,,,,,,2
+113,219,"Redondo Beach Bl & Prarie Ave",,33.877311,-118.343446,,,,,,2
+114,22,"Marine Ave & Bodger Ave",,33.894690,-118.338426,,,,,,2
+115,220,"Redondo Beach Bl & Amie Ave",,33.875675,-118.348549,,,,,,2
+116,221,"Redondo Beach Bl & Hawthorne Bl",,33.874545,-118.351911,,,,,,2
+117,224,"Pacific Coast Hwy & Belle Porte Ave",,33.789353,-118.301538,,,,,,2
+118,225,"Pacific Coast Hwy & President Ave",,33.789354,-118.304701,,,,,,2
+119,226,"Pacific Coast Hwy & Western Ave",,33.789367,-118.307157,,,,,,2
+120,227,"Western Ave & 255th St",,33.792648,-118.307760,,,,,,2
+121,228,"Western Ave & 253rd St",,33.794501,-118.307752,,,,,,2
+122,229,"Western Ave & Lomita Bl",,33.798131,-118.307733,,,,,,2
+123,23,"Marine Ave & Yukon Ave",,33.894743,-118.335034,,,,,,2
+124,230,"Western Ave & 247th St",,33.801098,-118.307670,,,,,,2
+125,231,"Western Ave & 242nd Pl",,33.804638,-118.307638,,,,,,2
+126,232,"Western Ave & 238th St",,33.808842,-118.308308,,,,,,2
+127,233,"Western Ave & 236th St",,33.811054,-118.308908,,,,,,2
+128,234,"Western Ave & Sepulveda Bl",,33.816751,-118.309030,,,,,,2
+129,235,"Western Ave & 228th St",,33.819192,-118.309043,,,,,,2
+130,236,"Western Ave & Plaza del Amo",,33.822986,-118.309094,,,,,,2
+131,237,"Western Ave & 223rd St",,33.824671,-118.309108,,,,,,2
+132,238,"Western Ave & 220th St",,33.828207,-118.309159,,,,,,2
+133,24,"Marine Ave & Lemoli Ave",,33.894754,-118.331121,,,,,,2
+134,240,"Western Ave & 213th St",,33.835132,-118.309240,,,,,,2
+135,241,"Western Ave & Torrance Bl",,33.837599,-118.309369,,,,,,2
+136,242,"Western Ave & 208th St",,33.841553,-118.309419,,,,,,2
+137,243,"Western Ave & 205th St",,33.844436,-118.309439,,,,,,2
+138,244,"Western Ave & Del Amo Bl",,33.846378,-118.309448,,,,,,2
+139,245,"Western Ave & Western Way",,33.849162,-118.309469,,,,,,2
+140,246,"Western Ave & Toyota Way",,33.854440,-118.309605,,,,,,2
+141,247,"Western Ave & 190th St",,33.857882,-118.309558,,,,,,2
+142,248,"Western Ave & 186th St",,33.862233,-118.309311,,,,,,2
+143,249,"Western Ave & 182nd St",,33.865245,-118.309311,,,,,,2
+144,250,"Western Ave & 178th St",,33.869398,-118.309302,,,,,,2
+145,251,"Western Ave & Artesia Bl",,33.873148,-118.309318,,,,,,2
+146,252,"Western Ave & 169th St",,33.877225,-118.309271,,,,,,2
+147,253,"Western Ave & 166th St",,33.880286,-118.309279,,,,,,2
+148,254,"Western Ave & Marine Ave",,33.894832,-118.309289,,,,,,2
+149,255,"Western Ave & 146th St",,33.898750,-118.309308,,,,,,2
+150,257,"Western Ave & 139th St",,33.905197,-118.309284,,,,,,2
+151,258,"Western Ave & 135th St",,33.909473,-118.309284,,,,,,2
+152,259,"Western Ave & 132nd St",,33.912836,-118.309270,,,,,,2
+153,26,"Marine Ave & Dublin Ave",,33.894761,-118.321964,,,,,,2
+154,260,"Western Ave & El Segundo Bl",,33.916084,-118.309261,,,,,,2
+155,261,"Western Ave & 120th St",,33.923542,-118.309237,,,,,,2
+156,263,"Imperial Hwy & Denker Ave",,33.931088,-118.304553,,,,,,2
+157,264,"Imperial Hwy & Normandie Ave",,33.931085,-118.299985,,,,,,2
+158,265,"Imperial Hwy & Budlong Ave",,33.931078,-118.295338,,,,,,2
+159,266,"Imperial Hwy & Vermont Ave",,33.931092,-118.292412,,,,,,2
+160,267,"Vermont Ave & Green Line Station",,33.928865,-118.291490,,,,,,2
+161,268,"Vermont Ave & 124th St",,33.919918,-118.291476,,,,,,2
+162,269,"Vermont Ave & El Segundo Bl",,33.916096,-118.291487,,,,,,2
+163,27,"Marine Ave & Van Ness Ave",,33.894762,-118.317654,,,,,,2
+164,270,"Vermont Ave & 132nd St",,33.912196,-118.291504,,,,,,2
+165,271,"Vermont Ave & 135th St",,33.909477,-118.291515,,,,,,2
+166,272,"Vermont Ave & 140th St",,33.904563,-118.291519,,,,,,2
+167,273,"Vermont Ave & 168th St",,33.879000,-118.291097,,,,,,2
+168,274,"Vermont Ave & Artesia Bl",,33.873229,-118.290805,,,,,,2
+169,276,"Normandie Ave & 186th St",,33.862317,-118.299126,,,,,,2
+170,277,"Normandie Ave & 190th St",,33.858909,-118.299123,,,,,,2
+171,278,"Normandie Ave & Knox St",,33.854538,-118.299136,,,,,,2
+172,279,"Normandie Ave & Francisco St",,33.850087,-118.299128,,,,,,2
+173,28,"Marine Ave & Gramercy Pl",,33.894761,-118.313298,,,,,,2
+174,280,"Normandie Ave & 204th St",,33.845438,-118.299122,,,,,,2
+175,281,"Normandie Ave & Torrance Bl",,33.842221,-118.299118,,,,,,2
+176,282,"Normandie Ave & 212th St",,33.837143,-118.299117,,,,,,2
+177,283,"Normandie Ave & Levinson St",,33.834196,-118.299105,,,,,,2
+178,285,"Normandie Ave & 220th St",,33.828396,-118.299100,,,,,,2
+179,286,"Normandie Ave & 223rd St",,33.824285,-118.299097,,,,,,2
+180,287,"Normandie Ave & 228th St",,33.818760,-118.298070,,,,,,2
+181,288,"Normandie Ave & Sepulveda Bl",,33.812665,-118.298091,,,,,,2
+182,289,"Normandie Ave & Oakhealth Dr",,33.809606,-118.298253,,,,,,2
+183,29,"Marine Ave & Western Ave",,33.894760,-118.309823,,,,,,2
+184,290,"Normandie Ave & Pasatiempo Ln",,33.806861,-118.298401,,,,,,2
+185,291,"Normandie Ave & 245th St",,33.802970,-118.298604,,,,,,2
+186,292,"Normandie Ave & Lomita Bl",,33.797524,-118.297322,,,,,,2
+187,293,"Normandie Ave & 253rd St",,33.794587,-118.297337,,,,,,2
+188,294,"Normandie Ave & 255th St",,33.792646,-118.297352,,,,,,2
+189,297,"Normandie Ave & 253rd St",,33.795004,-118.297634,,,,,,2
+190,298,"Normandie Ave & Lomita Bl",,33.797476,-118.297629,,,,,,2
+191,299,"Normandie Ave & 245th St",,33.802366,-118.298861,,,,,,2
+192,3,"Alondra Bl & Central Ave",,33.888379,-118.250504,,,,,,2
+193,30,"Western Ave & 154th Pl",,33.890843,-118.309024,,,,,,2
+194,300,"Normandie Ave & Pasatiempo Ln",,33.806780,-118.298638,,,,,,2
+195,301,"Normandie Ave & Oakhealth Dr",,33.809584,-118.298517,,,,,,2
+196,302,"Normandie Ave & Sepulveda Bl",,33.813686,-118.298338,,,,,,2
+197,303,"Normandie Ave & 228th St",,33.819190,-118.298321,,,,,,2
+198,304,"Normandie Ave & 225th St",,33.821978,-118.299112,,,,,,2
+199,305,"Normandie Ave & 223rd St",,33.824739,-118.299314,,,,,,2
+200,306,"Normandie Ave & 220th St",,33.828259,-118.299326,,,,,,2
+201,307,"Normandie Ave & Carson St",,33.831753,-118.299329,,,,,,2
+202,308,"Normandie Ave & Levinson St",,33.834481,-118.299330,,,,,,2
+203,309,"Normandie Ave & Torrance Bl",,33.841639,-118.299338,,,,,,2
+204,31,"Western Ave & Redondo Beach Bl",,33.889125,-118.309016,,,,,,2
+205,310,"Normandie Ave & 204th St",,33.845669,-118.299345,,,,,,2
+206,311,"Normandie Ave & Francisco St",,33.850512,-118.299356,,,,,,2
+207,312,"Normandie Ave & Knox St",,33.853935,-118.299360,,,,,,2
+208,313,"Normandie Ave & 190th St",,33.857703,-118.299380,,,,,,2
+209,314,"Normandie Ave & 186th St",,33.862279,-118.299355,,,,,,2
+210,316,"Vermont Ave & Artesia Bl",,33.872131,-118.291036,,,,,,2
+211,317,"Vermont Ave & 170th St",,33.876903,-118.291231,,,,,,2
+212,318,"Vermont Ave & 168th St",,33.879321,-118.291333,,,,,,2
+213,319,"Vermont Ave & Carnelian Pl",,33.904467,-118.292059,,,,,,2
+214,32,"Western Ave & 162nd St",,33.884056,-118.309019,,,,,,2
+215,320,"Vermont Ave & 138th St",,33.906407,-118.292052,,,,,,2
+216,321,"Vermont Ave & 135th St",,33.908923,-118.292049,,,,,,2
+217,322,"Vermont Ave & 133rd St",,33.911621,-118.291995,,,,,,2
+218,323,"Vermont Ave & El Segundo Bl",,33.916071,-118.291989,,,,,,2
+219,324,"Vermont Ave & 125th St",,33.918984,-118.291945,,,,,,2
+220,326,"Imperial Hwy & Budlong Ave",,33.930856,-118.295403,,,,,,2
+221,327,"Imperial Hwy & Normandie Ave",,33.930848,-118.300578,,,,,,2
+222,328,"Imperial Hwy & Denker Ave",,33.930836,-118.304294,,,,,,2
+223,329,"Imperial Hwy & Western Ave",,33.930845,-118.308347,,,,,,2
+224,33,"Western Ave & Gardena Bl",,33.882345,-118.309018,,,,,,2
+225,330,"Western Ave & College Dr",,33.929519,-118.308925,,,,,,2
+226,331,"Western Ave & 120th St",,33.923836,-118.308943,,,,,,2
+227,333,"El Segundo Bl & Aviation Bl",,33.916517,-118.378143,,,,,,2
+228,334,"El Segundo Bl & Isis Ave",,33.916523,-118.374650,,,,,,2
+229,336,"El Segundo Bl & Shoup Ave",,33.916527,-118.364078,,,,,,2
+230,337,"El Segundo Bl & Inglewood Ave",,33.916534,-118.360989,,,,,,2
+231,338,"El Segundo Bl & Ramona Ave",,33.916541,-118.357203,,,,,,2
+232,339,"El Segundo Bl & Hawthorne Bl",,33.916552,-118.352237,,,,,,2
+233,34,"166th St & Western Ave",,33.880205,-118.308942,,,,,,2
+234,340,"El Segundo Bl & Birch Ave",,33.916554,-118.349950,,,,,,2
+235,341,"El Segundo Bl & Oxford Ave",,33.916554,-118.346317,,,,,,2
+236,342,"El Segundo Bl & Prarie Ave",,33.916551,-118.344299,,,,,,2
+237,343,"El Segundo Bl & Cordary Ave",,33.916558,-118.341392,,,,,,2
+238,345,"El Segundo Bl & Yukon Ave",,33.916567,-118.335614,,,,,,2
+239,346,"El Segundo Bl & Cerise Ave",,33.916574,-118.332731,,,,,,2
+240,347,"El Segundo Bl & Chadron Ave",,33.916585,-118.329278,,,,,,2
+241,348,"El Segundo Bl & Crenshaw Bl",,33.916589,-118.327139,,,,,,2
+242,349,"El Segundo Bl & Wilkie Ave",,33.916583,-118.323240,,,,,,2
+243,35,"166th St & Denker Ave",,33.880220,-118.304215,,,,,,2
+244,350,"El Segundo Bl & Van Ness Ave",,33.916581,-118.318186,,,,,,2
+245,351,"El Segundo Bl & Western Ave",,33.916572,-118.308729,,,,,,2
+246,352,"El Segundo Bl & Harvard Bl",,33.916572,-118.306559,,,,,,2
+247,353,"El Segundo Bl & Halldale Ave",,33.916561,-118.302205,,,,,,2
+248,354,"El Segundo Bl & Normandie Ave",,33.916551,-118.300075,,,,,,2
+249,355,"El Segundo Bl & Budlong Ave",,33.916551,-118.296135,,,,,,2
+250,357,"El Segundo Bl & Hoover St",,33.916552,-118.287333,,,,,,2
+251,358,"El Segundo Bl & Broadway",,33.916549,-118.277926,,,,,,2
+252,359,"El Segundo Bl & Main St",,33.916552,-118.274368,,,,,,2
+253,36,"166th St & Brighton Ave",,33.880216,-118.300617,,,,,,2
+254,360,"El Segundo Bl & San Pedro St",,33.916553,-118.270014,,,,,,2
+255,362,"El Segundo Bl & McKinley Ave",,33.916477,-118.261315,,,,,,2
+256,363,"El Segundo Bl & Keene Ave",,33.916485,-118.257393,,,,,,2
+257,364,"El Segundo Bl & Central Ave",,33.916501,-118.254833,,,,,,2
+258,365,"El Segundo Bl & Slater Ave",,33.916385,-118.248811,,,,,,2
+259,366,"Compton Ave & El Segundo Bl",,33.916423,-118.246346,,,,,,2
+260,367,"Compton Ave & 124th St",,33.920060,-118.246349,,,,,,2
+261,368,"120th St & Wilmington Ave",,33.924716,-118.239654,,,,,,2
+262,37,"Gardena Bl & Raymond Ave",,33.881512,-118.297912,,,,,,2
+263,374,"Van Ness Ave & 154th St",,33.891228,-118.317947,,,,,,2
+264,376,"Van Ness Ave & 147th St",,33.898454,-118.317962,,,,,,2
+265,377,"Van Ness Ave & Rosecrans Ave",,33.902405,-118.317976,,,,,,2
+266,378,"Van Ness Ave & 139th St",,33.905695,-118.317964,,,,,,2
+267,379,"Van Ness Ave & 135th St",,33.908891,-118.317946,,,,,,2
+268,38,"Gardena Bl & Budlong Ave",,33.881559,-118.295908,,,,,,2
+269,380,"135th St & Wilton Pl",,33.909285,-118.313713,,,,,,2
+270,382,"135th St & Halldale Ave",,33.909269,-118.302748,,,,,,2
+271,383,"135th St & Normandie Ave",,33.909266,-118.300888,,,,,,2
+272,384,"Normandie Ave & 139th St",,33.905794,-118.300305,,,,,,2
+273,385,"Normandie Ave & Rosecrans Ave",,33.901627,-118.300314,,,,,,2
+274,386,"Normandie Ave & 145th Pl",,33.899915,-118.300317,,,,,,2
+275,387,"Normandie Ave & 149th St",,33.896749,-118.300325,,,,,,2
+276,388,"Normandie Ave & Marine Ave",,33.894479,-118.300333,,,,,,2
+277,389,"Normandie Ave & Redondo Beach Bl",,33.891229,-118.299956,,,,,,2
+279,390,"Normandie Ave & Magnolia Ave",,33.888497,-118.299277,,,,,,2
+280,391,"Normandie Ave & 160th St",,33.885593,-118.299425,,,,,,2
+281,392,"Normandie Ave & 162nd St",,33.883568,-118.299534,,,,,,2
+282,393,"Normandie Ave & 166th St",,33.879775,-118.299727,,,,,,2
+283,394,"Normandie Ave & 170th St",,33.877013,-118.299399,,,,,,2
+284,395,"Normandie Ave & Artesia Bl",,33.873623,-118.298788,,,,,,2
+285,396,"Normandie Ave & 178th St",,33.869524,-118.298984,,,,,,2
+286,397,"Normandie Ave & 182nd St",,33.865453,-118.299283,,,,,,2
+287,4,"Alondra Bl & Nestor Ave",,33.888586,-118.246825,,,,,,2
+289,400,"Kingsdale Ave & 182nd St",,33.865925,-118.356524,,,,,,2
+290,401,"Hawthorne Bl & 182nd St",,33.865699,-118.352807,,,,,,2
+291,402,"Hawthorne Bl & 179th St",,33.868290,-118.352809,,,,,,2
+292,403,"Hawthorne Bl & Artesia Bl",,33.872085,-118.352825,,,,,,2
+293,404,"Redondo Beach Bl & Freeman Ave",,33.875881,-118.348680,,,,,,2
+294,405,"Redondo Beach Bl & Prarie Ave",,33.877089,-118.344940,,,,,,2
+295,406,"Redondo Beach Bl & Ainsworth Ave",,33.878791,-118.339696,,,,,,2
+296,407,"Redondo Beach Bl & Yukon Ave",,33.880301,-118.335000,,,,,,2
+297,408,"Redondo Beach Bl & Crenshaw Bl",,33.883138,-118.326240,,,,,,2
+298,409,"Redondo Beach Bl & Arcturus Ave",,33.884175,-118.323024,,,,,,2
+299,41,"Vermont Ave & 163rd St",,33.883516,-118.291756,,,,,,2
+300,410,"Redondo Beach Bl & Van Ness Ave",,33.885723,-118.318250,,,,,,2
+302,413,"Redondo Beach Bl & Denker Ave",,33.889993,-118.305040,,,,,,2
+303,414,"Redondo Beach Bl & Raymond Ave",,33.892083,-118.298567,,,,,,2
+304,415,"Redondo Beach Bl & Budlong Ave",,33.892468,-118.296503,,,,,,2
+305,416,"Redondo Beach Bl & Catalina Ave",,33.892507,-118.295335,,,,,,2
+306,417,"Redondo Beach Bl & Vermont Ave",,33.892586,-118.292523,,,,,,2
+307,418,"Gardena Bl & Hoover St",,33.881802,-118.287284,,,,,,2
+308,419,"Gardena Bl & Figueroa St",,33.881923,-118.283381,,,,,,2
+309,42,"Vermont Ave & 161st St",,33.884967,-118.291846,,,,,,2
+310,420,"Gardena Bl & Broadway",,33.882050,-118.277985,,,,,,2
+311,421,"Main St & Alondra Bl",,33.885231,-118.276086,,,,,,2
+312,422,"Alondra Bl & Maple Ave",,33.885968,-118.270717,,,,,,2
+313,424,"Alondra Bl & Haskins Ln",,33.886268,-118.261770,,,,,,2
+314,425,"Alondra Bl & Clymar Ave",,33.886399,-118.257495,,,,,,2
+315,426,"Alondra Bl & Aprilla Ave",,33.886720,-118.254404,,,,,,2
+316,427,"Western Ave & 122nd St",,33.921932,-118.308954,,,,,,2
+317,428,"Western Ave & 125th St",,33.919104,-118.308954,,,,,,2
+318,429,"Western Ave & El Segundo Bl",,33.916110,-118.308976,,,,,,2
+319,43,"Vermont Ave & Magnolia Ave",,33.888959,-118.292012,,,,,,2
+320,430,"Western Ave & 132nd St",,33.912446,-118.308979,,,,,,2
+321,431,"Western Ave & 135th St",,33.908960,-118.308989,,,,,,2
+322,432,"Western Ave & 139th St",,33.905338,-118.309006,,,,,,2
+323,433,"Western Ave & Rosecrans Ave",,33.902285,-118.309022,,,,,,2
+324,434,"Western Ave & 146th St",,33.899176,-118.309019,,,,,,2
+325,435,"Western Ave & Marine Ave",,33.894486,-118.309005,,,,,,2
+326,436,"Western Ave & 166th St",,33.879866,-118.309017,,,,,,2
+327,437,"Western Ave & 169th St",,33.877764,-118.309015,,,,,,2
+328,438,"Western Ave & Artesia Bl",,33.873327,-118.309014,,,,,,2
+330,45,"Vermont Ave & Redondo Beach Bl",,33.892129,-118.292138,,,,,,2
+331,450,"Western Ave & Carson St",,33.831980,-118.308899,,,,,,2
+332,451,"Western Ave & 220th St",,33.827811,-118.308847,,,,,,2
+333,452,"Western Ave & 223rd St",,33.824265,-118.308808,,,,,,2
+334,453,"Western Ave & Plaza del Amo",,33.822522,-118.308782,,,,,,2
+335,454,"Western Ave & Sepulveda Bl",,33.817360,-118.308729,,,,,,2
+336,455,"Western Ave & 235th St",,33.812576,-118.308741,,,,,,2
+337,456,"Western Ave & 238th St",,33.808592,-118.307912,,,,,,2
+338,457,"Western Ave & 242nd Pl",,33.804824,-118.307322,,,,,,2
+339,458,"Western Ave & 247th St",,33.801298,-118.307354,,,,,,2
+340,459,"Western Ave & Lomita Bl",,33.797542,-118.307440,,,,,,2
+341,46,"Vermont Ave & Marine Ave",,33.894319,-118.292126,,,,,,2
+342,460,"Western Ave & 253rd St",,33.794561,-118.307454,,,,,,2
+343,461,"Western Ave & 255th St",,33.792356,-118.307460,,,,,,2
+344,462,"Western Ave & Pacific Coast Hwy",,33.789848,-118.307469,,,,,,2
+345,463,"Pacific Coast Hwy & President Ave",,33.789588,-118.304141,,,,,,2
+346,464,"Pacific Coast Hwy & Belle Porte Ave",,33.789578,-118.300942,,,,,,2
+347,465,"Pacific Coast Hwy & Normandie Ave",,33.789940,-118.297859,,,,,,2
+348,466,"Vermont Ave & 120th St",,33.923417,-118.291911,,,,,,2
+349,467,"Vermont Ave & Imperial Hwy",,33.930619,-118.292047,,,,,,2
+350,47,"Vermont Ave & 149th St",,33.896269,-118.292074,,,,,,2
+351,471,"Compton Bl & Willowbrook Ave",,33.895868,-118.223889,,,,,,2
+352,472,"Redondo Beach Bl & Normandie Ave",,33.891391,-118.300714,,,,,,2
+353,474,"120th St & Healthy Way",,33.924391,-118.243918,,,,,,2
+354,475,"El Segundo Bl & Figueroa St",,33.916551,-118.283303,,,,,,2
+355,476,"Aviation Bl & 120th St",,33.923366,-118.378302,,,,,,2
+356,477,"Compton Ave & 120th St",,33.923421,-118.246412,,,,,,2
+357,48,"Vermont Ave & Rosecrans Ave",,33.901505,-118.292068,,,,,,2
+358,488,"Redondo Beach Green Line Station",,33.894518,-118.369928,,,,,,2
+359,489,"Marine ave & Crenshaw blvd",,33.894748,-118.326837,,,,,,2
+360,490,"Marine Ave & Western Ave",,33.894576,-118.309381,,,,,,2
+361,491,"Gardena Bl & Berendo Ave",,33.881633,-118.293347,,,,,,2
+362,492,"Vermont Ave & Rosecrans Ave",,33.901891,-118.291961,,,,,,2
+365,495,"Harbor Fwy Green Line Station",,33.928693,-118.281866,,,,,,2
+366,496,"Marine Ave and S Inglewood ave",,33.894541,-118.361677,,,,,,2
+367,497,"Normandie Ave & PCH",,33.790399,-118.297375,,,,,,2
+368,498,"Normandie Ave & Carson Street",,33.831282,-118.299114,,,,,,2
+369,499,"Harbor Gateway Transit Center",,33.869574,-118.287197,,,,,,2
+370,5,"Alondra Bl & Northwood Ave",,33.888608,-118.243735,,,,,,2
+371,500,"Vermont Ave Green Line Station",,33.928799,-118.292048,,,,,,2
+372,501,"Western Ave & Imperial Hwy",,33.930379,-118.309221,,,,,,2
+373,502,"Western Ave & Rosecrans Ave",,33.901304,-118.309294,,,,,,2
+374,503,"Western Ave & Carson Street",,33.831116,-118.309201,,,,,,2
+376,506,"Redondo Beach Transit Center",,33.868080,-118.357314,,,,,,2
+377,507,"Redondo Beach & Crenshaw Blvd",,33.883063,-118.325651,,,,,,2
+378,508,"Redondo Beach & Western Ave",,33.888523,-118.308743,,,,,,2
+379,509,"Gardena Blvd & Vermont ave",,33.881522,-118.291366,,,,,,2
+380,510,"Alondra Blvd & Avalon Blvd",,33.886164,-118.264802,,,,,,2
+381,511,"MLK Transit Center",,33.898112,-118.223258,,,,,,2
+382,512,"Manhattan Beach & Crenshaw Blvd",,33.887526,-118.326251,,,,,,2
+383,513,"Marine Ave & Van Ness Ave",,33.894405,-118.317853,,,,,,2
+384,514,"135th Street & Western Ave",,33.909230,-118.309680,,,,,,2
+385,515,"Normandie Ave & Redondo Beach Blvd",,33.890965,-118.300021,,,,,,2
+386,516,"Normandie Ave & 182nd Street",,33.866446,-118.299172,,,,,,2
+388,518,"El Segundo Blvd & Hawthorne Blvd",,33.916349,-118.352112,,,,,,2
+389,519,"El Segundo Blvd & Western Ave",,33.916367,-118.308601,,,,,,2
+390,520,"El Segundo Blvd & Vermont Ave",,33.916543,-118.291339,,,,,,2
+391,521,"El Segundo Blvd & Avalon Blvd",,33.916539,-118.265935,,,,,,2
+392,522,"Willowbrook / Rosa Park Station",,33.928608,-118.238286,,,,,,2
+393,523,"Gardena High School",,33.866381,-118.297167,,,,,,2
+394,524,"Bishop Montgomery High School",,33.837469,-118.371902,,,,,,2
+395,525,"Redondo Beach & Hawthorne Blvd",,33.874540,-118.351937,,,,,,2
+396,526,"163rd st & Vermont",,33.883517,-118.291747,,,,,,2
+397,528,"Redondo Beach & Gramercy",,33.887134,-118.313840,,,,,,2
+399,530,"PCH & Normandie",,33.789936,-118.297135,,,,,,2
+402,535,"Kaiser Hospital",,33.788719,-118.297449,,,,,,2
+409,542,"Arrive Bishop Montgomery",,33.837470,-118.371902,,,,,,2
+415,6,"Alondra Bl & Dwight Ave",,33.888624,-118.240847,,,,,,2
+416,7,"Wilmington Ave & Alondra Bl",,33.888737,-118.237251,,,,,,2
+417,8,"Wilmington Ave & Laurel St",,33.892930,-118.237539,,,,,,2
+418,86,"Vermont Ave & Rosecrans Ave",,33.901646,-118.291531,,,,,,2
+419,87,"Vermont Ave & 149th St",,33.896785,-118.291544,,,,,,2
+420,88,"Vermont Ave & Redondo Beach Bl",,33.892843,-118.291619,,,,,,2
+421,89,"Vermont Ave & 157th St",,33.888712,-118.291450,,,,,,2
+422,9,"Wilmington Ave & Compton Bl",,33.895531,-118.237711,,,,,,2
+423,90,"Vermont Ave & Alondra Bl",,33.884996,-118.291341,,,,,,2
+424,92,"Gardena Bl & Berendo Ave",,33.881451,-118.293595,,,,,,2
+425,93,"Gardena Bl & Budlong Ave",,33.881390,-118.295643,,,,,,2
+426,94,"Gardena Bl & Normandie Ave",,33.881291,-118.299311,,,,,,2
+427,95,"166th St & Brighton Ave",,33.880088,-118.300928,,,,,,2
+428,96,"166th St & Denker Ave",,33.880056,-118.304959,,,,,,2
+429,97,"166th St & Western Ave",,33.880048,-118.308762,,,,,,2
+430,98,"Western Ave & Gardena Bl",,33.881703,-118.309312,,,,,,2
+431,99,"Western Ave & 162nd St",,33.883513,-118.309319,,,,,,2
+459,440,"Western Ave & 182nd St",,33.865456,-118.309019,,,,,,2
+460,441,"Western Ave & 186th St",,33.862284,-118.309021,,,,,,2
+461,442,"Western Ave & 190th St",,33.858764,-118.309030,,,,,,2
+462,443,"Western Ave & 195th St",,33.853994,-118.309209,,,,,,2
+463,444,"Western Ave & Francisco St",,33.849849,-118.309171,,,,,,2
+464,445,"Western Ave & Del Amo Bl",,33.846692,-118.309149,,,,,,2
+465,446,"Western Ave & 205th St",,33.844612,-118.309144,,,,,,2
+466,447,"Western Ave & 208th St",,33.842006,-118.309119,,,,,,2
+467,448,"Western Ave & Torrance Bl",,33.838904,-118.309092,,,,,,2
+468,449,"Western Ave & 213th St",,33.835175,-118.308982,,,,,,2
+471,562,"Harbor Gateway Transit Depart",,33.869036,-118.287704,,,,,,2
+472,563,"PRAIRIE AND ARBOR VITAE",,33.952458,-118.343979,,,,,,2
+482,527,"Hawthorne & Artesia Blvd",,33.872349,-118.352798,,,,,,2
+485,296,"Pacific Coast Hwy & Normandie Ave",,33.789935,-118.297135,,,,,,2
+488,120,"Compton Ave & 124th St",,33.919724,-118.246112,,,,,,2
+489,335,"El Segundo Bl & Oceangate Ave",,33.916525,-118.366968,,,,,,2
+490,468,"Vermont Ave & 120th St",,33.923515,-118.291456,,,,,,2
+498,566,"Rosecrans Station",,33.901844,-118.286726,,,,,,2
+499,567,"Rosecrans Station",,33.901973,-118.286726,,,,,,2
+500,568,"120th St & S Healthy Way",,33.923964,-118.245775,,,,,,2
+529,570,"El Segundo & Doty WB",,33.916551,-118.339861,,,,,,2
+530,571,"Vermont and Gardena Blvd",,33.881851,-118.291220,,,,,,2
+532,564,"Hawthorne/Lennox NB",,33.933649,-118.352453,,,,,,2
+533,565,"Hawthorne/Lennox SB",,33.933599,-118.352755,,,,,,2
+534,572,"Redondo Beach & Western WB",,33.888761,-118.308782,,,,,,2
+542,574,"Compton Bl & Acacia Ave",,33.895854,-118.226583,,,,,,2
+543,575,"Myrrh St & Acacia Ave",,33.892061,-118.225874,,,,,,2
+545,576,"Western Ave & 178th St",,33.869503,-118.309061,,,,,,2
+546,371,"Manhattan Beach Bl & Marigold Ave",,33.887516,-118.323732,,,,,,2
+547,372,"Manhattan Beach Bl & Purche Ave",,33.887521,-118.320784,,,,,,2
+548,578,"LAX Transit Center",,33.951202,-118.378140,,,,,,2
+549,579,"Aviation Blvd and Imperial Hwy",,33.930774,-118.378152,,,,,,2
+550,580,"Aviation Blvd and Imperial Hwy",,33.930571,-118.378526,,,,,,2

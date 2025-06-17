@@ -1,0 +1,8 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+1X,1,1X,Line 1X,,3,,ff4137,000000
+2,1,2,Line 2,,3,,91278f,000000
+3,1,3,Line 3,,3,,ff8941,000000
+3SCH,1,3SCH,Line 3 School,,3,,ff8941,000000
+4,1,4,Line 4,,3,,8a5d3b,000000
+5,1,5,Line 5,,3,,1b75bb,000000
+7X,1,7X,Line 7X,,3,,3fae2a,000000
